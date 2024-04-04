@@ -74,3 +74,14 @@
 .cadastro:hover {
   transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
+.video-section {
+  background-color: #ffffff; /* Cor de fundo ao redor do vídeo */
+  padding: 20px; /* Espaçamento ao redor do vídeo */
+}
+
+.video-container {
+  /* Estilo para o contêiner do vídeo */
+  
+}
+
+
