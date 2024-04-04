@@ -1,38 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Press+Start+2P&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #7d26cd;
+  color: #fff;
+  background-image: linear-gradient( 45deg, rgb(20, 20, 20), #1f165f);
+  max-width: 100vw;
   min-height: 100vh;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.header {
+  padding: 20px;
+}
+
+.nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease; /* Transição apenas para a largura */
+}
+
+.nav a:hover::after {
+  width: 100%; /* Aumenta a largura da barra até 100% ao passar o mouse */
+}
+
+/* Mantém a regra para ocultar a barra de progresso em certos elementos */
+.nav .no-progress::after {
+  display: none;
+}
+
+.logo {
+  max-width: 100%;
+  height: 120px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+/* Adiciona regras específicas para o botão "Cadastre-se" */
+.cadastro {
+  border: 1px solid white;
+  background-color: #0e0b2b;
+  font-size: 18px;
   color: white;
+  padding: 20px;
+  border-radius: 40px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  transition: transform 350ms ease-in-out; /* Adiciona a transição de transformação */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cadastro:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
