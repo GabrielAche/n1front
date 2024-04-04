@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo from './imagem/bindlogo.png';
+import video from './video/noob.mp4';
 
 function App() {
   return (
@@ -17,16 +18,10 @@ function App() {
       </header>
       <section id="section1" className="section">
         <div className="video-container">
-          {/* Aqui você pode inserir o código para o vídeo */}
-        </div>
-      </section>
-      <section id="section2" className="section">
-        {/* Aqui você pode adicionar ícones e emojis decorativos */}
-      </section>
-      <section id="section3" className="section">
-        <div className="signup-form">
-          <h2>Cadastre-se</h2>
-          {/* Aqui você pode adicionar o formulário de cadastro */}
+          <video className="video" controls>
+            <source src={video} type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
         </div>
       </section>
     </div>

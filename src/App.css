@@ -40,10 +40,14 @@
   padding: 50px 0;
 }
 
-.video-container {
-  /* Estilo para o contêiner do vídeo */
+.video-section {
+  background-color: #ffffff; /* Cor de fundo ao redor do vídeo */
+  padding: 20px; /* Espaçamento ao redor do vídeo */
 }
 
-.signup-form {
-  /* Estilo para o formulário de cadastro */
+.video-container {
+  /* Estilo para o contêiner do vídeo */
+  
 }
+
+
